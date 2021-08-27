@@ -1,0 +1,1 @@
+window.onload=function(){$.ajax({method:"GET",url:"https://musecdn.sfo3.digitaloceanspaces.com/muse-app/version-latest.txt",dataType:"text/plain",error:function(e){},complete:function(e){var t=(e||{}).responseText||"";$("#muse-version").text("Muse version "+t)}})};
