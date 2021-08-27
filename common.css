@@ -2815,7 +2815,7 @@ h1 {
 }
 
 .paragraph-2.intro-paragraph {
-  width: 35%;
+  width: 45%;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -2883,6 +2883,10 @@ h1 {
 .paragraph-2.download-copy.verified-copy.copy-2.heading-12 {
   margin-bottom: 10px;
   font-size: 24px;
+}
+
+.paragraph-2.download-copy.verified-copy.copy-2.mobile-copy-hide.mobile-copy-show {
+  display: none;
 }
 
 .paragraph-2.button-text {
@@ -3042,6 +3046,10 @@ h1 {
 
 .button.form.cancel-edit:hover {
   color: #000;
+}
+
+.button.form.email-signup-btn {
+  display: none;
 }
 
 .button.download {
@@ -3216,6 +3224,10 @@ h1 {
   align-items: center;
   border-radius: 10px;
   background-color: #f9cc04;
+}
+
+.download-container.old-container {
+  display: none;
 }
 
 .footer {
@@ -3531,6 +3543,10 @@ h1 {
 
 .text-field.account-fields.no-edit.blockcursor {
   cursor: not-allowed;
+}
+
+.text-field.account-fields.mobile-email-drop {
+  display: none;
 }
 
 .text-field.text-area {
@@ -4277,6 +4293,7 @@ h1 {
 }
 
 .form-block {
+  display: block;
   margin-bottom: 0px;
 }
 
@@ -4564,6 +4581,10 @@ h1 {
   padding-top: 0px;
 }
 
+.link-32 {
+  color: #333;
+}
+
 @media screen and (max-width: 991px) {
   .mission-container {
     position: relative;
@@ -4795,6 +4816,7 @@ h1 {
   }
 
   .paragraph-2.download-copy.mobile-download-text.muse-version-text {
+    display: none;
     font-family: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia, serif;
   }
 
@@ -4806,6 +4828,10 @@ h1 {
   .paragraph-2.download-copy {
     width: 50%;
     line-height: 25px;
+  }
+
+  .paragraph-2.download-copy.verified-copy.copy-2.mobile-copy-hide.mobile-copy-show {
+    display: none;
   }
 
   .heading-5 {
@@ -4851,6 +4877,10 @@ h1 {
     height: 50px;
   }
 
+  .button.form.email-signup-btn {
+    display: none;
+  }
+
   .icon {
     color: #fff;
   }
@@ -4889,7 +4919,8 @@ h1 {
   }
 
   .image-9 {
-    display: none;
+    display: block;
+    width: 100%;
   }
 
   .demo {
@@ -4912,11 +4943,25 @@ h1 {
   }
 
   .download-button.windows.mobile-download-link {
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .download-button.windows.mobile-download-link.mac-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .form-container.welcome-container {
     width: 70%;
+  }
+
+  .text-field.account-fields.mobile-email-drop {
+    display: none;
   }
 
   .split-container {
@@ -4998,10 +5043,18 @@ h1 {
   }
 
   .background-video-2.first-video.mobile-video {
+    display: block;
     width: 100%;
     height: 100%;
     -o-object-fit: contain;
     object-fit: contain;
+  }
+
+  .form-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .div-block-47 {
@@ -5105,6 +5158,10 @@ h1 {
     line-height: 16px;
   }
 
+  .paragraph-2.download-copy.verified-copy.copy-2.mobile-copy-hide.mobile-copy-show {
+    display: none;
+  }
+
   .featured-image {
     height: 550px;
   }
@@ -5121,6 +5178,10 @@ h1 {
 
   .button.join-session {
     width: 70%;
+  }
+
+  .button.form.email-signup-btn {
+    display: none;
   }
 
   .button.download {
@@ -5145,7 +5206,7 @@ h1 {
   }
 
   .image-9 {
-    display: none;
+    display: block;
   }
 
   .demo {
@@ -5170,6 +5231,10 @@ h1 {
 
   .form.contact {
     width: 90%;
+  }
+
+  .text-field.account-fields.mobile-email-drop {
+    display: none;
   }
 
   .split-left {
@@ -5199,6 +5264,13 @@ h1 {
     top: 20%;
   }
 
+  .form-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .download-container-2 {
     width: 90%;
     height: auto;
@@ -5208,6 +5280,28 @@ h1 {
 
   .div-block-47 {
     padding: 0px;
+  }
+
+  .html-embed.privacy-section.first-section.mobile-privacy {
+    width: 100%;
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .html-embed.privacy-section.mobile-privacy {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .privacy-section.html-embed {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .privacy-section.html-embed.mobile-privacy {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -5388,9 +5482,19 @@ h1 {
     width: 80%;
   }
 
+  .paragraph-2.download-copy.mobile-download-text.muse-version-text {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .paragraph-2.muse-version-text {
     font-size: 15px;
     line-height: 15px;
+  }
+
+  .paragraph-2.muse-version-text.mobile-version-text {
+    display: none;
   }
 
   .paragraph-2.intro-paragraph {
@@ -5406,6 +5510,21 @@ h1 {
 
   .paragraph-2.download-copy {
     width: 80%;
+  }
+
+  .paragraph-2.download-copy.copy-2.welcome-copy.mobile-margin {
+    margin-top: 0px;
+  }
+
+  .paragraph-2.download-copy.verified-copy.copy-2.mobile-copy-hide {
+    display: none;
+  }
+
+  .paragraph-2.download-copy.verified-copy.copy-2.mobile-copy-hide.mobile-copy-show {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
   }
 
   .paragraph-2.button-text {
@@ -5461,6 +5580,33 @@ h1 {
     font-size: 18px;
   }
 
+  .button.form.email-signup-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    margin: 5px auto 10px;
+    padding: 0px 20px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-color: #333;
+    background-color: #f9cc04;
+    color: #333;
+    font-size: 14px;
+  }
+
+  .button.form.email-signup-btn:hover {
+    background-color: #161616;
+    color: #f9cc04;
+  }
+
   .text-block-2 {
     font-size: 16px;
     line-height: 28px;
@@ -5485,7 +5631,7 @@ h1 {
   }
 
   .image-9 {
-    display: none;
+    display: block;
     width: 100%;
   }
 
@@ -5566,6 +5712,18 @@ h1 {
     margin-bottom: 10px;
   }
 
+  .download-button.windows.welcome-download.mobile-welcome-download {
+    display: none;
+  }
+
+  .download-button.windows.mobile-download-link {
+    display: none;
+  }
+
+  .download-button.windows.mobile-download-link.mac-button {
+    display: none;
+  }
+
   .join-session-container {
     width: 90%;
   }
@@ -5592,6 +5750,19 @@ h1 {
 
   .form.contact {
     width: 100%;
+  }
+
+  .text-field.account-fields.mobile-email-drop {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #333;
+    background-color: #f9cc04;
+    color: #333;
+  }
+
+  .text-field.account-fields.mobile-email-drop.mobile-email-front {
+    font-size: 16px;
   }
 
   .content {
@@ -5696,8 +5867,27 @@ h1 {
     object-fit: contain;
   }
 
+  .text-block-14 {
+    display: none;
+  }
+
+  .form-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .verifiedtext {
+    display: none;
+  }
+
   .link-9.invite-link {
     text-align: center;
+  }
+
+  .text-block-18 {
+    display: none;
   }
 
   .download-container-2 {
@@ -5716,6 +5906,18 @@ h1 {
 
   .div-block-47 {
     padding: 0px;
+  }
+
+  .html-embed.privacy-section.mobile-privacy.last-mobile-privacy {
+    width: 100%;
+  }
+
+  .italic-text {
+    display: block;
+  }
+
+  .link-32 {
+    color: #333;
   }
 }
 
