@@ -3189,6 +3189,10 @@ p {
   display: none;
 }
 
+.button.form.contact-btn {
+  width: auto;
+}
+
 .button.download {
   height: 50px;
   margin-bottom: 0%;
@@ -4353,13 +4357,30 @@ p {
 }
 
 .lottie-animation {
-  position: static;
+  position: fixed;
   left: 0%;
   top: 0%;
   right: 0%;
   bottom: 0%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: auto;
-  height: auto;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -o-object-fit: fill;
   object-fit: fill;
 }
@@ -4410,7 +4431,8 @@ p {
 }
 
 .error-message-2 {
-  background-color: rgba(255, 255, 222, 0);
+  background-color: transparent;
+  opacity: 0;
 }
 
 .text-block-11 {
@@ -4617,7 +4639,7 @@ p {
   padding-top: 4px;
   padding-right: 0px;
   padding-bottom: 0px;
-  font-family: 'Nb akademie book webfont';
+  font-family: 'Nhaasgroteskdspro 65md', sans-serif;
   color: #09ce09;
   font-size: 12px;
   line-height: 12px;
@@ -5398,6 +5420,76 @@ p {
   height: 431px;
 }
 
+.body-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #161616;
+}
+
+.links-container {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.links-page-button {
+  display: block;
+  width: 250px;
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f9cc04;
+  border-radius: 100px;
+  background-color: #161616;
+  font-family: 'Nhaasgroteskdspro 65md', sans-serif;
+  color: #f9cc04;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.links-page-button:hover {
+  background-color: #f9cc04;
+  color: #161616;
+}
+
+.links-page-button.stacks {
+  display: none;
+}
+
+.image-22 {
+  width: 100px;
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 991px) {
   .mission-container {
     position: relative;
@@ -6035,6 +6127,10 @@ p {
     width: 100%;
     height: auto;
   }
+
+  .lottie-animation-2 {
+    width: 1000px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -6338,6 +6434,10 @@ p {
 
   .image-21 {
     height: 100%;
+  }
+
+  .lottie-animation-2 {
+    width: 800px;
   }
 }
 
@@ -6651,6 +6751,10 @@ p {
     color: #f9cc04;
   }
 
+  .button.form.contact-btn {
+    width: 100%;
+  }
+
   .text-block-2 {
     font-size: 16px;
     line-height: 28px;
@@ -6889,7 +6993,10 @@ p {
   }
 
   .lottie-animation {
-    width: 500px;
+    position: absolute;
+    overflow: hidden;
+    width: auto;
+    height: auto;
   }
 
   .circles-lottie {
@@ -6969,6 +7076,12 @@ p {
 
   .social-wrapper {
     margin-top: 40px;
+  }
+
+  .social-link.tiktok.muse-links {
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .div-block-47 {
@@ -7140,6 +7253,10 @@ p {
     width: 90%;
   }
 
+  .gdpr {
+    display: none;
+  }
+
   .checkbox {
     border-style: solid;
     border-width: 1px;
@@ -7160,19 +7277,31 @@ p {
   }
 
   .background-video-4.feature-1 {
+    height: 400px;
+  }
+
+  .background-video-4.feature-1.mobile-feature-video.mobile-video-autoplay {
     height: 100%;
   }
 
   .background-video-4.feature-2 {
+    height: 400px;
+  }
+
+  .background-video-4.feature-2.mobile-feature-video.mobile-video-autoplay {
     height: 100%;
   }
 
   .background-video-4.feature-3 {
+    height: 400px;
+  }
+
+  .background-video-4.feature-3.mobile-feature-video.mobile-video-autoplay {
     height: 100%;
   }
 
   .background-video-4.feature-4 {
-    height: 100%;
+    height: 400px;
   }
 
   .background-video-4.feature-4.mobile-feature-video {
@@ -7180,6 +7309,10 @@ p {
   }
 
   .background-video-4.feature-5 {
+    height: 400px;
+  }
+
+  .background-video-4.feature-5.mobile-feature-video.mobile-video-autoplay {
     height: 100%;
   }
 
@@ -7199,6 +7332,12 @@ p {
 
   .bold-text-7 {
     font-weight: 400;
+  }
+
+  .lottie-animation-2 {
+    position: absolute;
+    width: 600px;
+    height: auto;
   }
 }
 
