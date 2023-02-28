@@ -3023,7 +3023,7 @@ p {
   margin-bottom: 40px;
   font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -3052,6 +3052,50 @@ p {
   font-size: 15px;
   line-height: 15px;
   text-transform: none;
+}
+
+.paragraph-2.download-text {
+  margin-bottom: 5px;
+  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-weight: 500;
+}
+
+.paragraph-2.download-text.m1-text {
+  width: 70%;
+  margin-bottom: 10px;
+  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-size: 14px;
+}
+
+.paragraph-2.download-text.m1-text.verified-class {
+  color: #fff;
+}
+
+.paragraph-2.download-text.headline {
+  margin-bottom: 50px;
+  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+}
+
+.paragraph-2.download-text.bold {
+  font-family: 'Nhaasgroteskdspro 65md', sans-serif;
+}
+
+.paragraph-2.download-text.bold.mobile-hidden.verified-text {
+  color: #fff;
+}
+
+.paragraph-2.download-text.bold.mobile-hidden.verified-tezt {
+  color: #fff;
+}
+
+.paragraph-2.download-text.regular {
+  color: rgba(22, 22, 22, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.paragraph-2.download-text.regular.mobile-hidden.verified-text-2 {
+  color: #b1b1b1;
 }
 
 .heading-5 {
@@ -3404,8 +3448,8 @@ p {
   display: flex;
   width: 600px;
   height: auto;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3599,8 +3643,12 @@ p {
 }
 
 .download-button.windows.mobile-download-link.mac-button {
-  margin-top: 25px;
+  margin-top: 10px;
   font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+}
+
+.download-button.windows.mobile-download-link.mac-button.m1 {
+  margin-top: 10px;
 }
 
 .download-button.windows.mobile-download-link.uninstall {
@@ -4894,15 +4942,27 @@ p {
 }
 
 .horizontal-line {
-  width: 330px;
+  width: 100%;
   height: 1px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #333;
+  background-color: #d1ab00;
 }
 
 .horizontal-line.light {
   background-color: #9e9e9e;
+}
+
+.horizontal-line.os-divider {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: #d1ab00;
+  color: #977c00;
+}
+
+.horizontal-line.os-divider.verified-class-line {
+  background-color: #797979;
+  color: #949494;
 }
 
 .body-4 {
@@ -5467,8 +5527,12 @@ p {
 
 .italic-text-2 {
   font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
+}
+
+.italic-text-2.verified-italic {
+  color: #b1b1b1;
 }
 
 .text-span-14 {
@@ -6072,6 +6136,10 @@ p {
   text-decoration: none;
 }
 
+.verified-class-link {
+  color: #f9cc04;
+}
+
 @media screen and (max-width: 991px) {
   .mission-container {
     position: relative;
@@ -6331,6 +6399,10 @@ p {
   .paragraph-2.download-text {
     color: #161616;
     text-align: center;
+  }
+
+  .paragraph-2.download-text.headline {
+    margin-bottom: 20px;
   }
 
   .paragraph-2.download-page {
@@ -6844,8 +6916,16 @@ p {
     line-height: 16px;
   }
 
+  .paragraph-2.download-copy.verified-copy.copy-2 {
+    font-size: 16px;
+  }
+
   .paragraph-2.download-copy.verified-copy.copy-2.mobile-copy-hide.mobile-copy-show {
     display: none;
+  }
+
+  .paragraph-2.download-text.headline {
+    margin-bottom: 10px;
   }
 
   .featured-image {
@@ -7337,6 +7417,22 @@ p {
 
   .paragraph-2.button-text {
     font-size: 13px;
+  }
+
+  .paragraph-2.download-text.m1-text {
+    display: none;
+  }
+
+  .paragraph-2.download-text.headline {
+    margin-bottom: 10px;
+  }
+
+  .paragraph-2.download-text.bold.mobile-hidden {
+    display: none;
+  }
+
+  .paragraph-2.download-text.regular.mobile-hidden {
+    display: none;
   }
 
   .heading-5 {
