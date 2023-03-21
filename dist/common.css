@@ -2261,22 +2261,24 @@ th {
 }
 
 body {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #333;
   font-size: 14px;
   line-height: 20px;
+  letter-spacing: 1px;
 }
 
 h1 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'Suisseintl book';
+  font-family: Beatrice, sans-serif;
   color: #fff;
   font-size: 90px;
   line-height: 80px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: none;
 }
 
 p {
@@ -2679,11 +2681,11 @@ p {
 .nav-link {
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #e2e2e2;
   font-size: 15px;
   line-height: 15px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .nav-link:hover {
@@ -2722,7 +2724,18 @@ p {
   width: auto;
   height: auto;
   padding: 15px 30px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  background-color: rgba(0, 0, 0, 0.54);
+  background-image: none;
+  font-family: Beatrice, sans-serif;
+  text-transform: none;
+}
+
+.nav-link.button.download.download-phones:hover {
+  background-color: #f9cc04;
+}
+
+.nav-link.phone-nav {
+  font-family: Beatrice, sans-serif;
   text-transform: none;
 }
 
@@ -2986,6 +2999,7 @@ p {
 
 .paragraph-2.welcome-paragraph {
   width: 100%;
+  font-family: Beatrice, sans-serif;
   color: #f7f7f7;
   font-size: 18px;
   text-align: center;
@@ -3012,7 +3026,7 @@ p {
 }
 
 .paragraph-2.download-copy.copy-2.welcome-copy.mobile-margin {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
 }
 
 .paragraph-2.download-copy.verified-copy {
@@ -3021,7 +3035,7 @@ p {
 
 .paragraph-2.download-copy.verified-copy.copy-2 {
   margin-bottom: 40px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #fff;
   font-size: 20px;
   text-align: center;
@@ -3029,14 +3043,16 @@ p {
 
 .paragraph-2.download-copy.verified-copy.copy-2.heading-12 {
   margin-bottom: 10px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
 }
 
 .paragraph-2.download-copy.verified-copy.copy-2.mobile-copy-hide {
   margin-bottom: 20px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
   letter-spacing: 0.05em;
 }
 
@@ -3063,7 +3079,7 @@ p {
 .paragraph-2.download-text.m1-text {
   width: 70%;
   margin-bottom: 10px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-size: 14px;
 }
 
@@ -3073,11 +3089,17 @@ p {
 
 .paragraph-2.download-text.headline {
   margin-bottom: 50px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
+  letter-spacing: 0em;
 }
 
 .paragraph-2.download-text.bold {
   font-family: 'Nhaasgroteskdspro 65md', sans-serif;
+}
+
+.paragraph-2.download-text.bold.mobile-hidden {
+  font-family: Beatrice, sans-serif;
+  letter-spacing: 0em;
 }
 
 .paragraph-2.download-text.bold.mobile-hidden.verified-text {
@@ -3092,6 +3114,10 @@ p {
   color: rgba(22, 22, 22, 0.7);
   font-size: 14px;
   font-weight: 400;
+}
+
+.paragraph-2.download-text.regular.mobile-hidden {
+  font-family: Beatrice, sans-serif;
 }
 
 .paragraph-2.download-text.regular.mobile-hidden.verified-text-2 {
@@ -3152,7 +3178,20 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #161616;
+  background-color: #000;
+  background-image: url(images/gradient.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.download.verify {
+  background-image: url(images/gradient.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .button {
@@ -3184,13 +3223,13 @@ p {
   background-color: #161616;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
-  font-family: 'Suisseintl book';
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .button:hover {
@@ -3202,9 +3241,10 @@ p {
   width: 20%;
   height: 50px;
   margin-bottom: 0%;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-size: 16px;
   line-height: 16px;
+  text-decoration: none;
 }
 
 .button.form {
@@ -3214,9 +3254,10 @@ p {
   margin-left: auto;
   padding-right: 40px;
   padding-left: 40px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-size: 16px;
   line-height: 16px;
+  letter-spacing: 0px;
 }
 
 .button.form.edit-account {
@@ -3230,13 +3271,13 @@ p {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px;
-  border-color: #09ce09;
-  color: #09ce09;
+  border-color: #f9cc04;
+  color: #f9cc04;
 }
 
 .button.form.save-button:hover {
-  border-color: #09ce09;
-  background-color: #09ce09;
+  border-color: #f9cc04;
+  background-color: #f9cc04;
   color: #161616;
 }
 
@@ -3260,6 +3301,13 @@ p {
 
 .button.form.contact-btn {
   width: auto;
+}
+
+.button.form.contact-btn {
+  font-family: Beatrice, sans-serif;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-transform: none;
 }
 
 .button.download {
@@ -3294,7 +3342,7 @@ p {
   z-index: 300;
   border: 1px none #000;
   border-radius: 13px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #171717;
   letter-spacing: 2px;
   text-shadow: -1px 0 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff;
@@ -3313,6 +3361,7 @@ p {
 .heading-6.faq {
   z-index: 99;
   margin-top: 40px;
+  font-family: Beatrice, sans-serif;
   color: #e2e2e2;
   font-size: 50px;
   line-height: 50px;
@@ -3358,6 +3407,7 @@ p {
 }
 
 .dropdown-list {
+  display: none;
   margin-left: 20px;
 }
 
@@ -3376,13 +3426,16 @@ p {
   border-bottom: 0.5px solid #000;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background-color: #000;
   color: #fff;
   font-size: 20px;
   line-height: 20px;
+  text-transform: none;
 }
 
 .dropdown-link:hover {
   background-color: #f9cc04;
+  color: #000;
 }
 
 .dropdown-link.w--current {
@@ -3578,6 +3631,11 @@ p {
   align-items: flex-start;
 }
 
+.text-block-3.phone-nav-dropdown {
+  font-family: Beatrice, sans-serif;
+  text-transform: none;
+}
+
 .body-2 {
   background-color: #161616;
 }
@@ -3639,7 +3697,7 @@ p {
 
 .download-button.windows.welcome-download.mobile-welcome-download.secondary-download {
   border-color: #aaa;
-  background-color: #474747;
+  background-color: #1f1f1f;
 }
 
 .download-button.windows.mobile-download-link.mac-button {
@@ -3687,7 +3745,7 @@ p {
 }
 
 .text-block-4 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #fff;
   font-size: 20px;
   line-height: 20px;
@@ -3739,6 +3797,8 @@ p {
 
 .form {
   width: 350px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .form.contact {
@@ -3765,9 +3825,9 @@ p {
   border-color: #b1b1b1;
   border-radius: 5px;
   background-color: #161616;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
 }
 
 .text-field:focus {
@@ -3864,7 +3924,7 @@ p {
 }
 
 .text-block-5 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #b1b1b1;
   text-align: center;
   letter-spacing: 0.05em;
@@ -3872,6 +3932,10 @@ p {
 
 .text-block-5.forgotpassword {
   text-align: right;
+}
+
+.text-block-5.browser-session {
+  margin-top: 10px;
 }
 
 .link-5 {
@@ -3903,6 +3967,11 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-image: url(images/gradient.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .success-message {
@@ -4034,8 +4103,8 @@ p {
 }
 
 .faq-a-text {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
-  color: #fff;
+  font-family: Beatrice, sans-serif;
+  color: #cac8c8;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.05em;
@@ -4050,9 +4119,10 @@ p {
 }
 
 .faq-q-text {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
-  letter-spacing: 1px;
+  font-weight: 500;
+  letter-spacing: 0px;
 }
 
 .c-faq-divider {
@@ -4213,7 +4283,7 @@ p {
 }
 
 .heading-8 {
-  font-family: 'Suisseintl book';
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
   font-size: 44px;
   line-height: 44px;
@@ -4222,16 +4292,17 @@ p {
 
 .heading-8.mobile-header-tutorial {
   width: 100%;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
 }
 
 .text-block-7 {
   width: 40%;
   margin-right: 20px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
-  color: #fff;
+  font-family: Beatrice, sans-serif;
+  color: #e9e9e9;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 300;
   letter-spacing: 0.05em;
 }
 
@@ -4633,7 +4704,7 @@ p {
   color: #f9cc04;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 ._2-buttons {
@@ -4676,7 +4747,7 @@ p {
   -ms-flex-align: center;
   align-items: center;
   background-color: #161616;
-  background-image: url(94e02038d9c69eccf382.gif);
+  background-image: url(images/static-dark.gif);
   background-position: 0px 0px;
   background-size: auto;
 }
@@ -4722,13 +4793,15 @@ p {
 }
 
 .bold-text-3 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-weight: 400;
+  letter-spacing: 0em;
 }
 
 .bold-text-4 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-weight: 400;
+  letter-spacing: 0em;
 }
 
 .bold-text-4.secondary-button {
@@ -4738,7 +4811,7 @@ p {
 .text-block-15 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #b1b1b1;
   letter-spacing: 0.05em;
 }
@@ -4884,7 +4957,7 @@ p {
   border-width: 1px;
   border-color: #646464;
   border-radius: 10px;
-  background-color: #2b2b2b;
+  background-color: #000;
 }
 
 .footer-page-links {
@@ -4917,24 +4990,44 @@ p {
 
 .html-embed {
   padding: 100px;
+  font-family: Beatrice, sans-serif;
 }
 
 .html-embed.privacy-section {
+  margin-bottom: 100px;
   padding-bottom: 0px;
+  font-family: Beatrice, sans-serif;
   color: #fff;
 }
 
 .html-embed.privacy-section.first-section {
+  width: 80%;
   padding-top: 100px;
+  font-family: Beatrice, sans-serif;
+  line-height: 28px;
 }
 
 .html-embed.privacy-section.first-section.mobile-privacy {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  width: 80%;
+  font-family: Beatrice, sans-serif;
   letter-spacing: 0.5px;
 }
 
+.html-embed.privacy-section.mobile-privacy.last-mobile-privacy {
+  margin-bottom: 100px;
+}
+
 .privacy-section.html-embed {
+  width: 80%;
   padding-top: 0px;
+  font-family: Beatrice, sans-serif;
+  line-height: 28px;
+}
+
+.privacy-section.html-embed.mobile-privacy {
+  width: 80%;
+  font-family: Beatrice, sans-serif;
+  line-height: 28px;
 }
 
 .link-32 {
@@ -5009,10 +5102,10 @@ p {
 }
 
 .heading-13 {
-  width: 80%;
+  width: 90%;
   margin-top: 0px;
   margin-bottom: 30px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-size: 110px;
   line-height: 100px;
   text-align: left;
@@ -5045,8 +5138,9 @@ p {
 }
 
 .tag-name {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #7674ff;
+  font-weight: 400;
   letter-spacing: 0.5px;
 }
 
@@ -5074,6 +5168,10 @@ p {
   color: #c965ff;
 }
 
+.tag-name.grey {
+  color: #7e7e7e;
+}
+
 .features-2 {
   position: relative;
   display: -webkit-box;
@@ -5094,14 +5192,16 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #161616;
+  background-color: #000;
 }
 
 .heading-14 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #333;
   font-size: 20em;
   line-height: 100%;
+  font-weight: 300;
+  letter-spacing: -14px;
   text-transform: none;
 }
 
@@ -5165,8 +5265,13 @@ p {
   border-color: #7674ff;
 }
 
+.feature-tag.grey {
+  border-color: #7e7e7e;
+  color: #7e7e7e;
+}
+
 .hero-button-cta {
-  font-family: 'Nhaasgroteskdspro 65md', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-size: 15px;
 }
 
@@ -5191,7 +5296,7 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #161616;
+  background-color: #000;
 }
 
 .text-block-19 {
@@ -5233,7 +5338,7 @@ p {
   top: 0vh;
   overflow: hidden;
   height: 100vh;
-  background-color: #00d4ff;
+  background-color: #000;
 }
 
 .p-xs-start {
@@ -5257,17 +5362,29 @@ p {
 }
 
 .copy-small {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
-  color: #fff;
+  font-family: Beatrice, sans-serif;
+  color: #e0e0e0;
   font-size: 1.3em;
   line-height: 28px;
+  font-weight: 400;
   text-align: left;
   letter-spacing: 0.5px;
 }
 
+.copy-small.browser-session {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
 .feature-section {
   position: relative;
+  display: none;
   background-color: #161616;
+}
+
+.feature-section.features-new {
+  display: block;
+  background-color: #000;
 }
 
 .feature-img {
@@ -5324,10 +5441,6 @@ p {
   -ms-flex-align: center;
   align-items: center;
   background-color: #000;
-  background-image: url(94e02038d9c69eccf382.gif);
-  background-position: 50% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .feature-img._3 {
@@ -5350,10 +5463,6 @@ p {
   -ms-flex-align: center;
   align-items: center;
   background-color: #000;
-  background-image: url(94e02038d9c69eccf382.gif);
-  background-position: 50% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .feature-img._4 {
@@ -5404,10 +5513,6 @@ p {
   -ms-flex-align: center;
   align-items: center;
   background-color: #000;
-  background-image: url(94e02038d9c69eccf382.gif);
-  background-position: 50% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .feature-img._6 {
@@ -5430,10 +5535,6 @@ p {
   -ms-flex-align: center;
   align-items: center;
   background-color: #000;
-  background-image: url(94e02038d9c69eccf382.gif);
-  background-position: 0px 0px;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 .feature-img._1 {
@@ -5459,10 +5560,7 @@ p {
   -ms-flex-align: center;
   align-items: center;
   background-color: #000;
-  background-image: url(94e02038d9c69eccf382.gif);
-  background-position: 50% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
+  color: #000;
 }
 
 .feature-img._4 {
@@ -5471,16 +5569,6 @@ p {
   display: -ms-flexbox;
   display: flex;
   background-color: #000;
-  background-image: url(94e02038d9c69eccf382.gif);
-  background-position: 50% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-
-.feature-img._7 {
-  background-image: url(94e02038d9c69eccf382.gif);
-  background-position: 0px 0px;
-  background-size: auto;
 }
 
 .feature-copy {
@@ -5495,7 +5583,7 @@ p {
 }
 
 .title1 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #919191;
   font-size: 3.6em;
   line-height: 1em;
@@ -5519,6 +5607,9 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: none;
+  border-width: 1px;
+  border-color: #000;
 }
 
 .teaser-img-tablet-down {
@@ -5526,7 +5617,7 @@ p {
 }
 
 .italic-text-2 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-size: 14px;
   font-style: normal;
 }
@@ -5585,14 +5676,19 @@ p {
   margin-left: 0px;
 }
 
-.background-video-4.feature-5 {
+.background-video-4.feature-3 {
+  width: 700px;
+  height: 700px;
+}
+
+.background-video-4.feature-9 {
   z-index: 1;
 }
 
 .background-video-4.feature-6 {
   z-index: 0;
-  width: 640px;
-  height: 360px;
+  width: 740px;
+  height: 442px;
 }
 
 .bold-text-6 {
@@ -5614,8 +5710,8 @@ p {
 .image-21 {
   position: relative;
   z-index: 0;
-  width: 500px;
-  height: 431px;
+  width: auto;
+  height: 700px;
 }
 
 .body-5 {
@@ -5666,7 +5762,7 @@ p {
   border-color: #f9cc04;
   border-radius: 100px;
   background-color: #161616;
-  font-family: 'Nhaasgroteskdspro 65md', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
   font-size: 14px;
   font-weight: 500;
@@ -5739,14 +5835,14 @@ p {
 }
 
 .text-block-21 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #b1b1b1;
   line-height: 14px;
   letter-spacing: 0.5px;
 }
 
 .text-block-22 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   letter-spacing: 0.5px;
 }
 
@@ -5765,7 +5861,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: auto;
-  margin-top: 100px;
+  margin-top: 40px;
   padding-top: 40px;
   padding-right: 40px;
   padding-left: 40px;
@@ -5825,7 +5921,7 @@ p {
 }
 
 .heading-15 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   font-size: 44px;
   line-height: 44px;
   text-align: left;
@@ -5870,7 +5966,7 @@ p {
   margin-bottom: 10px;
   -webkit-transition: margin 300ms cubic-bezier(.455, .03, .515, .955);
   transition: margin 300ms cubic-bezier(.455, .03, .515, .955);
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
   font-size: 16px;
   line-height: 16px;
@@ -5892,6 +5988,7 @@ p {
 
 .link-37.w--current {
   display: block;
+  font-family: Beatrice, sans-serif;
 }
 
 .link-37.list-of-links-option {
@@ -5911,14 +6008,17 @@ p {
 }
 
 .link-38 {
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
 }
 
 .link-39 {
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
 }
 
 .link-40 {
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
 }
 
@@ -5946,7 +6046,7 @@ p {
 
 .heading-16 {
   margin-bottom: 40px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
   font-size: 50px;
   line-height: 50px;
@@ -5957,7 +6057,7 @@ p {
 .text-block-25 {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #e2e2e2;
   font-size: 16px;
   line-height: 24px;
@@ -5977,6 +6077,7 @@ p {
 }
 
 .bold-text-8 {
+  font-family: Beatrice, sans-serif;
   text-decoration: none;
 }
 
@@ -6034,6 +6135,7 @@ p {
 }
 
 .link-41 {
+  font-family: Beatrice, sans-serif;
   color: #f9cc04;
 }
 
@@ -6044,7 +6146,7 @@ p {
 }
 
 .text-block-27 {
-  font-family: 'Nhaasgroteskdspro 55rg', sans-serif;
+  font-family: Beatrice, sans-serif;
   color: #b1b1b1;
   font-size: 16px;
   text-align: center;
@@ -6138,6 +6240,35 @@ p {
 
 .verified-class-link {
   color: #f9cc04;
+}
+
+.image-24 {
+  max-width: 60%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.bold-text-9 {
+  font-family: Beatrice, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.bold-text-10 {
+  font-family: Beatrice, sans-serif;
+  font-weight: 400;
+}
+
+.text-span-21 {
+  color: #979696;
+}
+
+.text-block-29 {
+  font-family: Beatrice, sans-serif;
+}
+
+.text-block-30 {
+  font-family: Beatrice, sans-serif;
 }
 
 @media screen and (max-width: 991px) {
@@ -6277,6 +6408,10 @@ p {
     color: #161616;
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .nav-link.button.download.download-phones {
+    background-color: #f9cc04;
   }
 
   .nav-link.phone-nav:active {
@@ -6666,11 +6801,13 @@ p {
   }
 
   .heading-13 {
-    font-size: 100px;
+    font-size: 90px;
   }
 
   .heading-14 {
-    font-size: 14em;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 12em;
   }
 
   .feature-2-tag-container {
@@ -6733,13 +6870,18 @@ p {
 
   .teaser-img-tablet-down {
     display: block;
-    width: 100%;
-    height: 50vh;
+    width: 600px;
+    height: 600px;
     text-align: center;
   }
 
   .teaser-img-tablet-down.feature-img-height {
     height: auto;
+  }
+
+  .teaser-img-tablet-down.image {
+    height: 100%;
+    padding-left: 0px;
   }
 
   .text-block-20 {
@@ -6778,7 +6920,7 @@ p {
     object-fit: contain;
   }
 
-  .background-video-4.feature-5 {
+  .background-video-4.feature-9 {
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -6797,6 +6939,7 @@ p {
   .image-21 {
     width: 100%;
     height: auto;
+    padding-left: 0px;
   }
 
   .lottie-animation-2 {
@@ -6813,6 +6956,10 @@ p {
 
   .acknowledgment-description {
     width: 70%;
+  }
+
+  .image-24 {
+    max-width: 90%;
   }
 }
 
@@ -7084,7 +7231,8 @@ p {
   }
 
   .heading-14 {
-    font-size: 10em;
+    font-size: 9em;
+    letter-spacing: -5px;
   }
 
   .feature-2-tag-container {
@@ -7119,8 +7267,44 @@ p {
     font-size: 2.6em;
   }
 
+  .teaser-img-tablet-down {
+    display: block;
+    width: auto;
+    height: auto;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+
   .teaser-img-tablet-down.feature-img-height {
     height: auto;
+  }
+
+  .background-video-4.feature-2.mobile-feature-video.mobile-video-autoplay {
+    width: 400px;
+    height: 300px;
+  }
+
+  .background-video-4.feature-3.mobile-feature-video.mobile-video-autoplay {
+    width: 400px;
+    height: 400px;
+  }
+
+  .background-video-4.feature-4.mobile-feature-video.mobile-video-autoplay {
+    width: 400px;
+    height: 300px;
+  }
+
+  .background-video-4.feature-9.mobile-feature-video.mobile-video-autoplay {
+    width: 400px;
+    height: 300px;
   }
 
   .background-video-4.feature-6 {
@@ -7131,8 +7315,15 @@ p {
     height: 100%;
   }
 
+  .background-video-4.feature-6.mobile-feature-video.mobile-video-autoplay {
+    width: 508px;
+    height: 300px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
   .image-21 {
-    height: 100%;
+    height: auto;
   }
 
   .lottie-animation-2 {
@@ -7185,6 +7376,10 @@ p {
 
   .acknowledgment-description {
     width: 90%;
+  }
+
+  .image-24 {
+    max-width: 90%;
   }
 }
 
@@ -7996,7 +8191,7 @@ p {
     width: 100%;
     margin-right: 0px;
     margin-left: 0px;
-    font-size: 50px;
+    font-size: 36px;
     line-height: 50px;
     text-align: center;
   }
@@ -8018,7 +8213,8 @@ p {
   }
 
   .heading-14 {
-    font-size: 5.3em;
+    font-size: 4.8em;
+    letter-spacing: 0px;
   }
 
   .feature-2-tag-container {
@@ -8053,14 +8249,23 @@ p {
     line-height: 33px;
   }
 
+  .copy-small {
+    font-size: 1.1em;
+  }
+
   .feature-section {
     position: relative;
     background-color: #161616;
   }
 
   .feature-container {
+    padding-top: 20px;
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .title1 {
+    font-size: 1.9em;
   }
 
   .feature-copy-wrap {
@@ -8113,7 +8318,8 @@ p {
   }
 
   .background-video-4.feature-2.mobile-feature-video.mobile-video-autoplay {
-    height: 100%;
+    width: 310px;
+    height: 190px;
   }
 
   .background-video-4.feature-3 {
@@ -8121,7 +8327,8 @@ p {
   }
 
   .background-video-4.feature-3.mobile-feature-video.mobile-video-autoplay {
-    height: 100%;
+    width: 290px;
+    height: 290px;
   }
 
   .background-video-4.feature-4 {
@@ -8132,18 +8339,28 @@ p {
     height: 100%;
   }
 
-  .background-video-4.feature-5 {
+  .background-video-4.feature-4.mobile-feature-video.mobile-video-autoplay {
+    width: 290px;
+  }
+
+  .background-video-4.feature-9 {
     height: 400px;
   }
 
-  .background-video-4.feature-5.mobile-feature-video.mobile-video-autoplay {
-    height: 100%;
+  .background-video-4.feature-9.mobile-feature-video.mobile-video-autoplay {
+    width: 290px;
+    height: 290px;
   }
 
   .background-video-4.feature-6 {
     height: 296px;
     -o-object-fit: contain;
     object-fit: contain;
+  }
+
+  .background-video-4.feature-6.mobile-feature-video.mobile-video-autoplay {
+    width: 290px;
+    height: 170px;
   }
 
   .bold-text-5 {
@@ -8225,6 +8442,14 @@ p {
     width: 100%;
     max-width: none;
   }
+
+  .image-24 {
+    max-width: 90%;
+  }
+
+  .bold-text-10 {
+    font-size: 18px;
+  }
 }
 
 @font-face {
@@ -8266,6 +8491,90 @@ p {
   font-family: 'Nhaasgroteskdspro 66mdit';
   src: url(daeb25bdacaff7ea30bd.ttf) format('truetype');
   font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(5772e3963203de660a53.otf) format('opentype'), url(85c82ec0c7bddde4e33f.otf) format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(7fc4574e385c21ad7d8c.otf) format('opentype'), url(a4902634c3a26f0809ba.otf) format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(e41163c91df91ca42ce3.otf) format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(f698012ad229f7c9a48d.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(8be9b802be78cb90c936.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(cc4d5b49d7bcc1251852.otf) format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(5961e149ca76880941ae.otf) format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(36663592260d78651a2b.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(4f0579157e74c8efc72b.otf) format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(2c4e80b238ca32a9b4d9.otf) format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(74ce66832a82c0efdf03.otf) format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Beatrice';
+  src: url(da13b7162fc3700a90bd.otf) format('opentype');
+  font-weight: 100;
   font-style: italic;
   font-display: swap;
 }
