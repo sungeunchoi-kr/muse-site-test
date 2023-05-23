@@ -2746,7 +2746,9 @@ p {
 
 .paragraph-2.download-copy.copy-2.welcome-copy {
   color: #fff;
-  margin-top: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 0;
   font-family: Beatrice, sans-serif;
   font-weight: 300;
 }
@@ -2759,6 +2761,13 @@ p {
   font-weight: 300;
 }
 
+.paragraph-2.download-copy.copy-2.welcome-copy.mobile-margin.manual-text-dark {
+  color: #161616;
+  margin-bottom: 13px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .paragraph-2.download-copy.verified-copy {
   margin-bottom: 20px;
 }
@@ -2766,7 +2775,7 @@ p {
 .paragraph-2.download-copy.verified-copy.copy-2 {
   color: #fff;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-family: Beatrice, sans-serif;
   font-size: 20px;
 }
@@ -2811,6 +2820,7 @@ p {
   margin-bottom: 10px;
   font-family: Beatrice, sans-serif;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .paragraph-2.download-text.m1-text.verified-class, .paragraph-2.download-text.m1-text.m1-text-white {
@@ -2820,7 +2830,8 @@ p {
 .paragraph-2.download-text.headline {
   width: 60%;
   letter-spacing: 0;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: Beatrice, sans-serif;
 }
 
@@ -2911,6 +2922,13 @@ p {
   background-size: cover;
   background-attachment: fixed;
   flex-direction: column;
+}
+
+.download.download-muse-spark {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .button {
@@ -5635,15 +5653,24 @@ p {
 
 .text-block-33.max-credits {
   opacity: .5;
+  margin-top: -10px;
   font-size: 14px;
+  line-height: 140%;
+}
+
+.text-block-33.copied-text {
+  margin-top: -30px;
+  font-size: 14px;
+  display: none;
 }
 
 .link-container {
   width: 100%;
   text-align: center;
+  white-space: pre-wrap;
   border: 1px solid rgba(0, 0, 0, .3);
   border-radius: 100px;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
@@ -5651,9 +5678,19 @@ p {
 }
 
 .spark-referral-link-url {
+  width: 100%;
+  height: 100%;
   color: #423fff;
+  text-align: center;
+  letter-spacing: 0;
+  white-space: pre-wrap;
+  cursor: pointer;
+  object-fit: fill;
+  order: 0;
   font-weight: 500;
+  line-height: 14px;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .spark-banner {
@@ -5720,6 +5757,28 @@ p {
 
 .terms-link {
   color: #f9cc04;
+}
+
+.image-27 {
+  width: 20%;
+}
+
+.image-27.spark-logo {
+  margin-bottom: 20px;
+}
+
+.image-27.muse-logo {
+  margin-bottom: 10px;
+}
+
+.image-27.muse-logo-verify {
+  margin-bottom: 30px;
+}
+
+.text-block-34 {
+  width: 100%;
+  white-space: pre-wrap;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 991px) {
@@ -5978,6 +6037,11 @@ p {
 
   .featured-image.mobile-featured.first {
     object-fit: contain;
+  }
+
+  .download.download-muse-spark {
+    flex-direction: column;
+    align-items: center;
   }
 
   .button {
@@ -6920,8 +6984,13 @@ p {
     width: 80%;
   }
 
+  .paragraph-2.download-copy.copy-2.welcome-copy {
+    display: none;
+  }
+
   .paragraph-2.download-copy.copy-2.welcome-copy.mobile-margin {
     margin-top: 0;
+    display: none;
   }
 
   .paragraph-2.download-copy.verified-copy.copy-2.heading-12 {
@@ -6948,6 +7017,7 @@ p {
   }
 
   .paragraph-2.download-text.headline {
+    width: 70%;
     margin-bottom: 10px;
     font-size: 18px;
     line-height: 140%;
@@ -6995,6 +7065,10 @@ p {
     height: 100%;
     justify-content: flex-start;
     padding-top: 167px;
+  }
+
+  .download.download-muse-spark {
+    height: 100%;
   }
 
   .button.join-session {
@@ -7160,11 +7234,16 @@ p {
   }
 
   .form-container.mobile-email-signup-container {
+    margin-bottom: 20px;
     display: block;
   }
 
   .form-container.mobile-email-signup-container.download-page-hidden {
     display: none;
+  }
+
+  .form-container.mobile-email-signup-container.more-margin {
+    margin-bottom: 60px;
   }
 
   .form, .form.contact {
@@ -7725,6 +7804,10 @@ p {
     font-size: 14px;
   }
 
+  .text-block-33.copied-text {
+    display: none;
+  }
+
   .link-container {
     width: 100%;
     flex-wrap: wrap;
@@ -7749,6 +7832,10 @@ p {
   .download-options {
     justify-content: center;
     align-items: center;
+  }
+
+  .image-27 {
+    width: 50%;
   }
 }
 
