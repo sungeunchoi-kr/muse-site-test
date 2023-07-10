@@ -345,10 +345,6 @@ label {
   color: #999;
   opacity: 1;
 }
-.w-input:-ms-input-placeholder,
-.w-select:-ms-input-placeholder {
-  color: #999;
-}
 .w-input::-webkit-input-placeholder,
 .w-select::-webkit-input-placeholder {
   color: #999;
@@ -409,7 +405,6 @@ textarea.w-select {
 }
 .w-radio-input {
   margin: 4px 0 0;
-  margin-top: 1px \9;
   line-height: normal;
   float: left;
   margin-left: -20px;
@@ -1194,7 +1189,6 @@ textarea.w-select {
   opacity: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-transform: translate(0, 0);
   /* 2 */
@@ -1376,14 +1370,12 @@ textarea.w-select {
   top: 50%;
   width: 100%;
   -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
 .w-lightbox-thumbnail .w-lightbox-wide {
   left: 50%;
   height: 100%;
   -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
 /*
@@ -3082,6 +3074,7 @@ p {
   font-family: Beatrice, sans-serif;
   font-size: 50px;
   line-height: 50px;
+  position: relative;
 }
 
 .heading-6.features {
@@ -3468,6 +3461,13 @@ p {
 
 .text-field.text-area:focus {
   border-color: #f9cc04;
+}
+
+.text-field.text-area.spark-survey-textbox {
+  height: 0;
+  max-height: 250px;
+  min-height: 150px;
+  margin-top: 0;
 }
 
 .text-field.input-editable {
@@ -4127,6 +4127,10 @@ p {
   font-family: Beatrice, sans-serif;
 }
 
+.text-block-15.survey-question {
+  align-self: flex-start;
+}
+
 .change-pass {
   display: none;
 }
@@ -4137,6 +4141,7 @@ p {
 
 .changepasswordtext {
   color: #f9cc04;
+  text-align: right;
   letter-spacing: .05em;
   text-transform: none;
   cursor: pointer;
@@ -4144,11 +4149,11 @@ p {
   padding-bottom: 0;
   padding-right: 0;
   font-family: "Nhaasgroteskdspro 55rg", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
-  line-height: 12px;
+  line-height: 14px;
   text-decoration: underline;
-  position: absolute;
+  position: relative;
   top: 0%;
   bottom: auto;
   left: auto;
@@ -5781,6 +5786,16 @@ p {
   overflow: hidden;
 }
 
+.spark-survey-checkbox {
+  align-self: flex-start;
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+
+.spark-checkbox-label {
+  color: #b1b1b1;
+}
+
 @media screen and (max-width: 991px) {
   .mission-container {
     z-index: 5;
@@ -7367,6 +7382,11 @@ p {
 
   .text-block-9 {
     color: #161616;
+    text-transform: none;
+  }
+
+  .text-block-9.error-text {
+    text-align: center;
   }
 
   .text-block-14 {
