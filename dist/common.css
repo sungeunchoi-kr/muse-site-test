@@ -5419,11 +5419,13 @@ p {
 }
 
 .spark-pricing {
+  background-color: #222;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 220px;
+  margin-top: 0;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
   display: flex;
 }
 
@@ -5541,8 +5543,10 @@ p {
 }
 
 .plan-info-headline.description.price.cut.alt {
+  width: 160px;
   color: #fff;
-  text-align: center;
+  text-align: left;
+  font-size: 12px;
 }
 
 .plan-info-headline.description.price.big {
@@ -5551,20 +5555,24 @@ p {
 }
 
 .plan-info-headline.description.price.big.unlimited {
+  width: 160px;
   color: #ffb780;
   text-align: center;
+  letter-spacing: 0;
+  text-transform: none;
   border: 1px dotted #ec8e57;
   border-radius: 100px;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 100%;
 }
 
 .plan-info-headline.description.price.big.unlimited.yellow {
+  width: auto;
   color: #ffef7a;
   -webkit-text-stroke-color: #dac742;
   border-color: #d6c127;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 100%;
 }
 
@@ -5955,6 +5963,7 @@ p {
 }
 
 .pack-title.center.prisms-chords-title {
+  border-top-style: none;
   margin-bottom: 20px;
 }
 
@@ -6056,7 +6065,7 @@ p {
 
 .bundle-line.stack {
   grid-row-gap: 20px;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -6073,10 +6082,11 @@ p {
 }
 
 .bundle-price.center.horizontal {
-  width: 100%;
+  width: auto;
   grid-column-gap: 20px;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .bold-text-13 {
@@ -6094,6 +6104,14 @@ p {
 }
 
 .bundle-credit, .bundle-prisms {
+  grid-row-gap: 10px;
+  flex-direction: column;
+  display: flex;
+}
+
+.div-block-49 {
+  width: 160px;
+  grid-column-gap: 10px;
   grid-row-gap: 10px;
   flex-direction: column;
   display: flex;
