@@ -8367,6 +8367,10 @@ p {
     flex-direction: column;
   }
 
+  .text-block-21 {
+    margin-bottom: 10px;
+  }
+
   .heading-16 {
     font-size: 40px;
     line-height: 40px;
